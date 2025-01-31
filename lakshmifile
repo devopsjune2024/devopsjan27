@@ -9,7 +9,7 @@ pipeline {
     }
     
     stages {
-        stage ('GITCLONE') {
+        stage ('MAIN__________GITCLONE') {
             steps {
                 
             //   sh 'git clone https://github.com/devopsjune2024/devopsjan27.git'
