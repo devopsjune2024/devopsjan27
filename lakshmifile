@@ -10,6 +10,10 @@ pipeline {
     
     stages {
         stage ('___GITCLONE') {
+            agent {
+                label 'devopsenv'
+            }
+                
             steps {
                 
             //   sh 'git clone https://github.com/devopsjune2024/devopsjan27.git'
@@ -18,6 +22,9 @@ pipeline {
             }
         }
         stage ('BUILD') {
+            agent {
+                label 'devopsenv'
+            }
             steps {
             sh 'mvn package'
             }
